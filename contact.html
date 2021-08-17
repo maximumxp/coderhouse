@@ -20,7 +20,7 @@
             <li><a href="./contact.html">CONTACTO</a></li>       
         </ul>
     </nav>
-
+ 
     <section>
         <p class="titulos">FORMULARIO DE CONTACTO</p>
         <form action="Get" name="test" class="formBox" >
@@ -30,7 +30,7 @@
             <input type="email" value="" name="email">
             <label for="texto">Su consulta: </label>
             <textarea name="texto" cols="30" rows="10"></textarea>
-            <fieldset class="fields">
+            <fieldset class="fields buttonFormFormat">
                 <label for="tipo"></label>
                 <select name="tipos">
                   <option value="c">Cliente</option>
@@ -38,9 +38,10 @@
                   <option value="f">Franquicia</option>
                 </select>
             </fieldset>
-            
-            <input type="submit" value="enviar">
-            <input type="reset" value="borrar">     
+            <div class="buttonFormFormat">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>     
         </form>
 
     </section>

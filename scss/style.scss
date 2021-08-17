@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom, rgb(34, 32, 32), rgb(44, 43, 43));
+    background-image: linear-gradient(to bottom, rgb(24, 23, 23), rgb(44, 43, 43));
     max-width: 100%;
     overflow-x: hidden;
 
@@ -19,7 +19,7 @@ body{
   }
 
 .menu ul li{
-    background-color: #810000;
+    //background-color: #810000;
     color: rgb(26, 24, 24);
     border: solid 1px black;
     height: max-content;
@@ -29,7 +29,7 @@ body{
     margin-block-start: 2px;
     margin-block-end: 2px;
     font-family: 'Nunito', sans-serif;
-    border-color: #810000;
+    //border-color: #810000;
     border-width: 5px;
     padding: 10px;
     list-style-position: inside;
@@ -92,12 +92,12 @@ nav li{
 
 nav li:hover{
     background-color: #630000;
-    border-color: #630000;
+    border-color: #6e0101;
     
 }
 
 nav a:hover{
-    color: rgb(26, 24, 24);
+    color: rgb(14, 13, 13);
 
 }
 
@@ -146,6 +146,7 @@ nav ul ul li{
 .header{
     display:flex;
     justify-content: center;
+    transform: translate(28px);
 }
 
 .menu{
@@ -166,7 +167,7 @@ nav ul ul li{
     margin-top: 30px;
     flex-direction: row;
     justify-content:stretch;
-    transform:translate(220px);
+    transform:translate(550px);
     
 }
 
@@ -334,3 +335,34 @@ nav ul ul li{
 
   }
 
+  .buttonFormFormat{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(650px);
+              transform: translateX(650px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(650px);
+              transform: translateX(650px);
+    }
+  }
+
+  .slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }

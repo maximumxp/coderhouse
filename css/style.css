@@ -3,7 +3,7 @@
   padding: 0px; }
 
 body {
-  background-image: linear-gradient(to bottom, #222020, #2c2b2b);
+  background-image: linear-gradient(to bottom, #181717, #2c2b2b);
   max-width: 100%;
   overflow-x: hidden; }
 
@@ -13,7 +13,6 @@ body {
     font-size: smaller; } }
 
 .menu ul li {
-  background-color: #810000;
   color: #1a1818;
   border: solid 1px black;
   height: max-content;
@@ -23,7 +22,6 @@ body {
   margin-block-start: 2px;
   margin-block-end: 2px;
   font-family: 'Nunito', sans-serif;
-  border-color: #810000;
   border-width: 5px;
   padding: 10px;
   list-style-position: inside;
@@ -72,10 +70,10 @@ nav li {
 
 nav li:hover {
   background-color: #630000;
-  border-color: #630000; }
+  border-color: #6e0101; }
 
 nav a:hover {
-  color: #1a1818; }
+  color: #0e0d0d; }
 
 nav ul ul {
   position: absolute;
@@ -111,7 +109,8 @@ nav ul ul li {
 
 .header {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  transform: translate(28px); }
 
 .menu {
   display: flex;
@@ -128,7 +127,7 @@ nav ul ul li {
   margin-top: 30px;
   flex-direction: row;
   justify-content: stretch;
-  transform: translate(220px); }
+  transform: translate(550px); }
 
 .data p {
   display: flex;
@@ -280,3 +279,27 @@ nav ul ul li {
 .btn-primary:hover {
   background-color: #5a0303;
   border-color: dimgrey; }
+
+.buttonFormFormat {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(650px);
+    transform: translateX(650px); } }
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(650px);
+    transform: translateX(650px); } }
+
+.slide-left {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
