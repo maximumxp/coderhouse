@@ -303,3 +303,9 @@ nav ul ul li {
 .slide-left {
   -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.redFont {
+  color: #df1313;
+  background-color: #1c1c1d;
+  border-radius: 8px;
+  padding-bottom: 5px; }

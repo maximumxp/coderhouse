@@ -19,7 +19,6 @@ body{
   }
 
 .menu ul li{
-    //background-color: #810000;
     color: rgb(26, 24, 24);
     border: solid 1px black;
     height: max-content;
@@ -29,7 +28,6 @@ body{
     margin-block-start: 2px;
     margin-block-end: 2px;
     font-family: 'Nunito', sans-serif;
-    //border-color: #810000;
     border-width: 5px;
     padding: 10px;
     list-style-position: inside;
@@ -365,4 +363,11 @@ nav ul ul li{
   .slide-left {
 	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .redFont{
+    color: #df1313;
+    background-color: rgb(28, 28, 29);
+    border-radius: 8px;
+    padding-bottom: 5px;
   }
